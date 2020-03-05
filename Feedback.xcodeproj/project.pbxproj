@@ -14,6 +14,7 @@
 		83D690A22410BEC200B57ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D690A12410BEC200B57ACB /* Assets.xcassets */; };
 		83D690A52410BEC200B57ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D690A32410BEC200B57ACB /* LaunchScreen.storyboard */; };
 		83D690A82410BEC200B57ACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D690A72410BEC200B57ACB /* main.m */; };
+		83D690B02410BED500B57ACB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D690AF2410BED500B57ACB /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		83D690A42410BEC200B57ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D690A62410BEC200B57ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D690A72410BEC200B57ACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83D690AF2410BED500B57ACB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D690B02410BED500B57ACB /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +50,7 @@
 			children = (
 				83D690942410BEBD00B57ACB /* Feedback */,
 				83D690932410BEBD00B57ACB /* Products */,
+				83D690AE2410BED500B57ACB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,12 +65,10 @@
 		83D690942410BEBD00B57ACB /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
-				83D690952410BEBD00B57ACB /* AppDelegate.h */,
-				83D690962410BEBD00B57ACB /* AppDelegate.m */,
-				83D690982410BEBE00B57ACB /* SceneDelegate.h */,
-				83D690992410BEBE00B57ACB /* SceneDelegate.m */,
-				83D6909B2410BEBE00B57ACB /* ViewController.h */,
-				83D6909C2410BEBE00B57ACB /* ViewController.m */,
+				83D690B52410BF9600B57ACB /* DSP Algorithms */,
+				83D690B42410BF8A00B57ACB /* Audio Engine */,
+				83D690B12410BF3200B57ACB /* App and Scene */,
+				83D690B32410BF6900B57ACB /* View Controllers */,
 				83D6909E2410BEBE00B57ACB /* Main.storyboard */,
 				83D690A12410BEC200B57ACB /* Assets.xcassets */,
 				83D690A32410BEC200B57ACB /* LaunchScreen.storyboard */,
@@ -74,6 +76,48 @@
 				83D690A72410BEC200B57ACB /* main.m */,
 			);
 			path = Feedback;
+			sourceTree = "<group>";
+		};
+		83D690AE2410BED500B57ACB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83D690AF2410BED500B57ACB /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83D690B12410BF3200B57ACB /* App and Scene */ = {
+			isa = PBXGroup;
+			children = (
+				83D690952410BEBD00B57ACB /* AppDelegate.h */,
+				83D690962410BEBD00B57ACB /* AppDelegate.m */,
+				83D690982410BEBE00B57ACB /* SceneDelegate.h */,
+				83D690992410BEBE00B57ACB /* SceneDelegate.m */,
+			);
+			path = "App and Scene";
+			sourceTree = "<group>";
+		};
+		83D690B32410BF6900B57ACB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83D6909B2410BEBE00B57ACB /* ViewController.h */,
+				83D6909C2410BEBE00B57ACB /* ViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83D690B42410BF8A00B57ACB /* Audio Engine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Audio Engine";
+			sourceTree = "<group>";
+		};
+		83D690B52410BF9600B57ACB /* DSP Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "DSP Algorithms";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
