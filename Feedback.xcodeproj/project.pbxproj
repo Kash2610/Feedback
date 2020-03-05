@@ -15,6 +15,19 @@
 		83D690A52410BEC200B57ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D690A32410BEC200B57ACB /* LaunchScreen.storyboard */; };
 		83D690A82410BEC200B57ACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D690A72410BEC200B57ACB /* main.m */; };
 		83D690B02410BED500B57ACB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D690AF2410BED500B57ACB /* AVFoundation.framework */; };
+		83D690BE2410C31F00B57ACB /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690B82410C31F00B57ACB /* Filter.cpp */; };
+		83D690BF2410C31F00B57ACB /* GLD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690B92410C31F00B57ACB /* GLD.cpp */; };
+		83D690C02410C31F00B57ACB /* Transforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83D690BC2410C31F00B57ACB /* Transforms.mm */; };
+		83D690C12410C31F00B57ACB /* CircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690BD2410C31F00B57ACB /* CircularBuffer.cpp */; };
+		83D690CC2410C33800B57ACB /* IOBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690C22410C33800B57ACB /* IOBuffer.cpp */; };
+		83D690CD2410C33800B57ACB /* AsyncBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690C42410C33800B57ACB /* AsyncBuffer.cpp */; };
+		83D690CE2410C33800B57ACB /* IosAudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83D690C62410C33800B57ACB /* IosAudioController.mm */; };
+		83D690CF2410C33800B57ACB /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690C72410C33800B57ACB /* RingBuffer.cpp */; };
+		83D690D02410C33800B57ACB /* AudioFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83D690CB2410C33800B57ACB /* AudioFormat.mm */; };
+		83D690D22410C3BE00B57ACB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D690D12410C3BE00B57ACB /* QuartzCore.framework */; };
+		83D690D42410C3C600B57ACB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D690D32410C3C600B57ACB /* AudioToolbox.framework */; };
+		83D690D82410CC4900B57ACB /* Configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690D62410CC4900B57ACB /* Configuration.cpp */; };
+		83D690DB2410D0CF00B57ACB /* dsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690D92410D0CF00B57ACB /* dsp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +44,30 @@
 		83D690A62410BEC200B57ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D690A72410BEC200B57ACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83D690AF2410BED500B57ACB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		83D690B62410C31F00B57ACB /* GLD.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GLD.hpp; sourceTree = "<group>"; };
+		83D690B72410C31F00B57ACB /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transforms.h; sourceTree = "<group>"; };
+		83D690B82410C31F00B57ACB /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
+		83D690B92410C31F00B57ACB /* GLD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLD.cpp; sourceTree = "<group>"; };
+		83D690BA2410C31F00B57ACB /* CircularBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularBuffer.hpp; sourceTree = "<group>"; };
+		83D690BB2410C31F00B57ACB /* Filter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Filter.hpp; sourceTree = "<group>"; };
+		83D690BC2410C31F00B57ACB /* Transforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Transforms.mm; sourceTree = "<group>"; };
+		83D690BD2410C31F00B57ACB /* CircularBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularBuffer.cpp; sourceTree = "<group>"; };
+		83D690C22410C33800B57ACB /* IOBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOBuffer.cpp; sourceTree = "<group>"; };
+		83D690C32410C33800B57ACB /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		83D690C42410C33800B57ACB /* AsyncBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AsyncBuffer.cpp; sourceTree = "<group>"; };
+		83D690C52410C33800B57ACB /* IOBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOBuffer.h; sourceTree = "<group>"; };
+		83D690C62410C33800B57ACB /* IosAudioController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IosAudioController.mm; sourceTree = "<group>"; };
+		83D690C72410C33800B57ACB /* RingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RingBuffer.cpp; sourceTree = "<group>"; };
+		83D690C82410C33800B57ACB /* IosAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosAudioController.h; sourceTree = "<group>"; };
+		83D690C92410C33800B57ACB /* AudioFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFormat.h; sourceTree = "<group>"; };
+		83D690CA2410C33800B57ACB /* AsyncBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncBuffer.h; sourceTree = "<group>"; };
+		83D690CB2410C33800B57ACB /* AudioFormat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioFormat.mm; sourceTree = "<group>"; };
+		83D690D12410C3BE00B57ACB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		83D690D32410C3C600B57ACB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		83D690D62410CC4900B57ACB /* Configuration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Configuration.cpp; sourceTree = "<group>"; };
+		83D690D72410CC4900B57ACB /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		83D690D92410D0CF00B57ACB /* dsp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dsp.cpp; sourceTree = "<group>"; };
+		83D690DA2410D0CF00B57ACB /* dsp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dsp.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D690D22410C3BE00B57ACB /* QuartzCore.framework in Frameworks */,
 				83D690B02410BED500B57ACB /* AVFoundation.framework in Frameworks */,
+				83D690D42410C3C600B57ACB /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +104,7 @@
 		83D690942410BEBD00B57ACB /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
+				83D690D52410CBEA00B57ACB /* Configuration */,
 				83D690B52410BF9600B57ACB /* DSP Algorithms */,
 				83D690B42410BF8A00B57ACB /* Audio Engine */,
 				83D690B12410BF3200B57ACB /* App and Scene */,
@@ -81,6 +121,8 @@
 		83D690AE2410BED500B57ACB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83D690D32410C3C600B57ACB /* AudioToolbox.framework */,
+				83D690D12410C3BE00B57ACB /* QuartzCore.framework */,
 				83D690AF2410BED500B57ACB /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -109,6 +151,16 @@
 		83D690B42410BF8A00B57ACB /* Audio Engine */ = {
 			isa = PBXGroup;
 			children = (
+				83D690C42410C33800B57ACB /* AsyncBuffer.cpp */,
+				83D690CA2410C33800B57ACB /* AsyncBuffer.h */,
+				83D690C92410C33800B57ACB /* AudioFormat.h */,
+				83D690CB2410C33800B57ACB /* AudioFormat.mm */,
+				83D690C22410C33800B57ACB /* IOBuffer.cpp */,
+				83D690C52410C33800B57ACB /* IOBuffer.h */,
+				83D690C82410C33800B57ACB /* IosAudioController.h */,
+				83D690C62410C33800B57ACB /* IosAudioController.mm */,
+				83D690C72410C33800B57ACB /* RingBuffer.cpp */,
+				83D690C32410C33800B57ACB /* RingBuffer.h */,
 			);
 			path = "Audio Engine";
 			sourceTree = "<group>";
@@ -116,8 +168,27 @@
 		83D690B52410BF9600B57ACB /* DSP Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				83D690BD2410C31F00B57ACB /* CircularBuffer.cpp */,
+				83D690BA2410C31F00B57ACB /* CircularBuffer.hpp */,
+				83D690B82410C31F00B57ACB /* Filter.cpp */,
+				83D690BB2410C31F00B57ACB /* Filter.hpp */,
+				83D690B92410C31F00B57ACB /* GLD.cpp */,
+				83D690B62410C31F00B57ACB /* GLD.hpp */,
+				83D690B72410C31F00B57ACB /* Transforms.h */,
+				83D690BC2410C31F00B57ACB /* Transforms.mm */,
+				83D690D92410D0CF00B57ACB /* dsp.cpp */,
+				83D690DA2410D0CF00B57ACB /* dsp.hpp */,
 			);
 			path = "DSP Algorithms";
+			sourceTree = "<group>";
+		};
+		83D690D52410CBEA00B57ACB /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				83D690D62410CC4900B57ACB /* Configuration.cpp */,
+				83D690D72410CC4900B57ACB /* Configuration.h */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +261,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D690BE2410C31F00B57ACB /* Filter.cpp in Sources */,
 				83D6909D2410BEBE00B57ACB /* ViewController.m in Sources */,
+				83D690D82410CC4900B57ACB /* Configuration.cpp in Sources */,
+				83D690DB2410D0CF00B57ACB /* dsp.cpp in Sources */,
+				83D690C12410C31F00B57ACB /* CircularBuffer.cpp in Sources */,
 				83D690972410BEBD00B57ACB /* AppDelegate.m in Sources */,
+				83D690D02410C33800B57ACB /* AudioFormat.mm in Sources */,
+				83D690BF2410C31F00B57ACB /* GLD.cpp in Sources */,
+				83D690CF2410C33800B57ACB /* RingBuffer.cpp in Sources */,
 				83D690A82410BEC200B57ACB /* main.m in Sources */,
+				83D690CD2410C33800B57ACB /* AsyncBuffer.cpp in Sources */,
+				83D690CE2410C33800B57ACB /* IosAudioController.mm in Sources */,
 				83D6909A2410BEBE00B57ACB /* SceneDelegate.m in Sources */,
+				83D690C02410C31F00B57ACB /* Transforms.mm in Sources */,
+				83D690CC2410C33800B57ACB /* IOBuffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2U72HA96L8;
+				DEVELOPMENT_TEAM = L5PB5HSUCK;
 				INFOPLIST_FILE = Feedback/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -351,7 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2U72HA96L8;
+				DEVELOPMENT_TEAM = L5PB5HSUCK;
 				INFOPLIST_FILE = Feedback/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

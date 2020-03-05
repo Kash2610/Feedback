@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#include "Configuration.h"
+#include "dsp.hpp"
 
 @interface ViewController ()
 
