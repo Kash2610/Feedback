@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "Configuration.h"
+#include "dsp.hpp"
+#include "IosAudioController.h"
 
 @interface ViewController : UIViewController
 

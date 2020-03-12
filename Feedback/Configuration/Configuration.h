@@ -20,14 +20,9 @@ class Configuration{
    
     
     bool _isAFCOn;
-    bool _isStereo;
-  
-   
+
     Configuration(){
-       
         _isAFCOn = true;
-       
-       
     }
     
 public:
@@ -40,7 +35,7 @@ public:
     void setAFC(bool ans){_isAFCOn = ans;}
  
    
-    bool getIsCompressionOn(){return _isAFCOn;}
+    bool getIsAFCOn(){return _isAFCOn;}
   
     
     void displaySetting(){

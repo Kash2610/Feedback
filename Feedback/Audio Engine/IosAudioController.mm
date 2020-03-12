@@ -23,7 +23,7 @@ using namespace std;
 
 
 IosAudioController* iosAudio;
-
+Configuration* ConfigAudioEngine = Configuration::getInstance();
 IOBuffer* ioBuffer = new IOBuffer(2*FRAME_SIZE*kNumberOfChannel);
 RingBuffer* processBuffer = new RingBuffer();
 
@@ -57,10 +57,10 @@ static void asyncProcessData(float *data, float *w, void *userData) {
         CFTimeInterval startTime = CACurrentMediaTime();
         X1->doTransform(X1, data);
         CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-        //printf("time: %f\n", elapsedTime);
+        printf("time: %f\n", elapsedTime);
         std::this_thread::sleep_for(std::chrono::milliseconds(10000));
         w[0]++;
-        //printf("w: %f\n",w[0]);
+        printf("w: %f\n",w[0]);
     }
     lock->unlock();
 }
@@ -165,7 +165,7 @@ static OSStatus recordingCallback(void *inRefCon,
             processBuffer->read(placeHolder, kNumberOfChannel*FRAME_SIZE);
             deInterleave(placeHolder, &audio ,FRAME_SIZE, kNumberOfChannel);
             writeToFile(audio.left, FRAME_SIZE);
-            if(ConfigSettings2->getIsAFCOn()){
+            if(ConfigAudioEngine->getIsAFCOn()){
                 for (int i = 0; i < FRAME_SIZE; i++) {
                     activeBuffer[(sampleCounter + i) % NUM_SAMPLES] = audio.left[i];
                 }

@@ -7,18 +7,22 @@
 //
 
 #import "ViewController.h"
-#include "Configuration.h"
-#include "dsp.hpp"
+
 
 @interface ViewController ()
 
 @end
 
+Configuration* Configuration::_instance = NULL;
+Configuration* Config = Configuration::getInstance();
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    iosAudio = [[IosAudioController alloc] init];
+    [iosAudio start];
+    
 }
 
 

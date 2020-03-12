@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		83D690972410BEBD00B57ACB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D690962410BEBD00B57ACB /* AppDelegate.m */; };
 		83D6909A2410BEBE00B57ACB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D690992410BEBE00B57ACB /* SceneDelegate.m */; };
-		83D6909D2410BEBE00B57ACB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D6909C2410BEBE00B57ACB /* ViewController.m */; };
+		83D6909D2410BEBE00B57ACB /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83D6909C2410BEBE00B57ACB /* ViewController.mm */; };
 		83D690A02410BEBE00B57ACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D6909E2410BEBE00B57ACB /* Main.storyboard */; };
 		83D690A22410BEC200B57ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D690A12410BEC200B57ACB /* Assets.xcassets */; };
 		83D690A52410BEC200B57ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D690A32410BEC200B57ACB /* LaunchScreen.storyboard */; };
@@ -28,6 +28,8 @@
 		83D690D42410C3C600B57ACB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D690D32410C3C600B57ACB /* AudioToolbox.framework */; };
 		83D690D82410CC4900B57ACB /* Configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690D62410CC4900B57ACB /* Configuration.cpp */; };
 		83D690DB2410D0CF00B57ACB /* dsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83D690D92410D0CF00B57ACB /* dsp.cpp */; };
+		A0D836D12419FFB6002B25B5 /* AFC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0D836CF2419FFB6002B25B5 /* AFC.cpp */; };
+		A0D836D4241A0968002B25B5 /* howlingDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0D836D2241A0968002B25B5 /* howlingDetection.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,7 @@
 		83D690982410BEBE00B57ACB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		83D690992410BEBE00B57ACB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		83D6909B2410BEBE00B57ACB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		83D6909C2410BEBE00B57ACB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		83D6909C2410BEBE00B57ACB /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		83D6909F2410BEBE00B57ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83D690A12410BEC200B57ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D690A42410BEC200B57ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +70,10 @@
 		83D690D72410CC4900B57ACB /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		83D690D92410D0CF00B57ACB /* dsp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dsp.cpp; sourceTree = "<group>"; };
 		83D690DA2410D0CF00B57ACB /* dsp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dsp.hpp; sourceTree = "<group>"; };
+		A0D836CF2419FFB6002B25B5 /* AFC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AFC.cpp; sourceTree = "<group>"; };
+		A0D836D02419FFB6002B25B5 /* AFC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AFC.hpp; sourceTree = "<group>"; };
+		A0D836D2241A0968002B25B5 /* howlingDetection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = howlingDetection.cpp; sourceTree = "<group>"; };
+		A0D836D3241A0968002B25B5 /* howlingDetection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = howlingDetection.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +110,10 @@
 		83D690942410BEBD00B57ACB /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
+				83D690B12410BF3200B57ACB /* App and Scene */,
 				83D690D52410CBEA00B57ACB /* Configuration */,
 				83D690B52410BF9600B57ACB /* DSP Algorithms */,
 				83D690B42410BF8A00B57ACB /* Audio Engine */,
-				83D690B12410BF3200B57ACB /* App and Scene */,
 				83D690B32410BF6900B57ACB /* View Controllers */,
 				83D6909E2410BEBE00B57ACB /* Main.storyboard */,
 				83D690A12410BEC200B57ACB /* Assets.xcassets */,
@@ -143,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				83D6909B2410BEBE00B57ACB /* ViewController.h */,
-				83D6909C2410BEBE00B57ACB /* ViewController.m */,
+				83D6909C2410BEBE00B57ACB /* ViewController.mm */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -178,6 +184,10 @@
 				83D690BC2410C31F00B57ACB /* Transforms.mm */,
 				83D690D92410D0CF00B57ACB /* dsp.cpp */,
 				83D690DA2410D0CF00B57ACB /* dsp.hpp */,
+				A0D836CF2419FFB6002B25B5 /* AFC.cpp */,
+				A0D836D02419FFB6002B25B5 /* AFC.hpp */,
+				A0D836D2241A0968002B25B5 /* howlingDetection.cpp */,
+				A0D836D3241A0968002B25B5 /* howlingDetection.hpp */,
 			);
 			path = "DSP Algorithms";
 			sourceTree = "<group>";
@@ -262,7 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D690BE2410C31F00B57ACB /* Filter.cpp in Sources */,
-				83D6909D2410BEBE00B57ACB /* ViewController.m in Sources */,
+				83D6909D2410BEBE00B57ACB /* ViewController.mm in Sources */,
+				A0D836D12419FFB6002B25B5 /* AFC.cpp in Sources */,
 				83D690D82410CC4900B57ACB /* Configuration.cpp in Sources */,
 				83D690DB2410D0CF00B57ACB /* dsp.cpp in Sources */,
 				83D690C12410C31F00B57ACB /* CircularBuffer.cpp in Sources */,
@@ -274,6 +285,7 @@
 				83D690CD2410C33800B57ACB /* AsyncBuffer.cpp in Sources */,
 				83D690CE2410C33800B57ACB /* IosAudioController.mm in Sources */,
 				83D6909A2410BEBE00B57ACB /* SceneDelegate.m in Sources */,
+				A0D836D4241A0968002B25B5 /* howlingDetection.cpp in Sources */,
 				83D690C02410C31F00B57ACB /* Transforms.mm in Sources */,
 				83D690CC2410C33800B57ACB /* IOBuffer.cpp in Sources */,
 			);

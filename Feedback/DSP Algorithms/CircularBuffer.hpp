@@ -10,8 +10,9 @@
 #define CircularBuffer_hpp
 
 #include <stdio.h>
+#include "AudioFormat.h"
 
-static const int capacity = 10;
+static const int capacity = FRAME_SIZE*100;
 class CircularBuffer{
 
    

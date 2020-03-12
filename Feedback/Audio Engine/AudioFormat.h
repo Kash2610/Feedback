@@ -12,12 +12,12 @@
 
 
 
-#define FRAME_SIZE 256// Please put in order of 2.
-#define SAMPLING_FREQUENCY 16000
+#define FRAME_SIZE 64// Please put in order of 2.
+#define SAMPLING_FREQUENCY 48000
 #define kOutputBus 0
 #define kInputBus 1
-#define kNumberOfChannel 2
-#define NFFT 512
+#define kNumberOfChannel 1
+#define NFFT FRAME_SIZE*2
 
 
 
@@ -25,9 +25,9 @@
 #include <stdio.h>
 
 typedef struct AudioData{
-    UInt32                  frameSize;
-    Float32*                left;
-    Float32*                right;
+    int                  frameSize;
+    float*                left;
+    float*                right;
 }audioData;
 
 
